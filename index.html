@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RRT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="toggleNav">☰ Menu</a>
+            <ul class="txt nav-l">
+                
+                <li><a class="home-txt" href="#">Full Home Page</a></li>
+                <li><a href="">Top 100</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Upload</a></li>
+            </ul>
+        </nav>
+        <div class="txt nav-r">
+            <a href="#">Register</a>
+            <a class="log" href="#">Login</a>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <div class="banner-container">
+       <img src="img/logo.png" alt="">
+    </div>
+    <!-- end of banner -->
+
+    <div class="search-bar">
+        <form class="search" action="">
+            <input type="search" name="" id="" placeholder="Search for torrents..">
+            <button><img src="img/search.png" alt="search"><span>SEARCH</span></button>
+        </form>
+    </div>
+    <!-- end of search bar -->
+
+    <div class="domains">
+       <div class="domain1">
+           <h1>RR-torrent Domains</h1>
+           <span>&#9872; 2 months ago</span>
+       </div>
+        <div class="domain2"><span>RR-torrent newest alternative domain is <a href="#">RR-torrent.gd,</a> for full list of alternative domains see<a href="#"> about</a> page.</span></div>
+    </div>
+    <!-- end of domain -->
+
+    <div class="category">
+        <figure>
+            <img src="img/multimedia.png" alt="">
+            <figcaption>Movies</figcaption>
+        </figure>
+        <figure>
+            <img src="img/tv.png" alt="">
+            <figcaption>Television</figcaption>
+        </figure>
+        <figure>
+            <img src="img/soft.png" alt="">
+            <figcaption>Software</figcaption>
+        </figure>
+        <figure>
+            <img src="img/music-note.png" alt="">
+            <figcaption>Music</figcaption>
+        </figure>
+        <figure>
+            <img src="img/animation.png" alt="">
+            <figcaption>Anime</figcaption>
+        </figure>
+        <figure>
+            <img class="docu" src="img/video-camera.png" alt="">
+            <figcaption>Documentaries</figcaption>
+        </figure>
+        <figure>
+            <img src="img/package.png" alt="">
+            <figcaption>Others</figcaption>
+        </figure>
+    </div>
+    <!-- end of category -->
+
+     <!-- Script -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script>
+       
+       $(function() {
+         $('.toggleNav').on('click',function() {
+           $('.nav-bar ul').toggleClass('nav-l');
+         });
+       });
+   
+     </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: black;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid firebrick;
+
+}
+.nav-l{
+    margin-left: 120px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+
+.txt a{
+    font-size: 12px;
+    font-weight: 1000;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cornsilk;
+    border-right: 1px solid rgba(245, 222, 179, 0.568);
+    padding:0px 8px;
+    
+}
+.txt a:hover{
+    color: firebrick;
+}
+nav li:last-child a{
+    border-right: 0;
+}
+.txt .home-txt{
+    color: forestgreen;
+}
+.nav-r .log{
+    margin-right: 120px;
+    border-right: 0;
+    color: firebrick;
+}
+.banner-container{
+    margin: 50px 0;
+    transition: all 0.3s ease 0s;
+}
+.banner-container img{
+    width: 256px;
+    height: 118px;
+    display: block;
+    margin: 0 auto;
+}
+.banner-container img:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=search]{
+    width: 45%;
+    padding: 10px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right:2px solid firebrick;
+    background-color: black;
+    color: cornflowerblue;
+    font-size: 18px;
+}
+input[type=search]:focus{
+    outline: 0;
+    box-shadow: 1px 1px 30px #820007;
+}
+
+input[placeholder]{
+    color: rgb(34, 178, 65);
+  padding-left: 20px;
+  color: #A7ADAD;
+
+}
+
+button{
+    border: 0;
+    margin-right:10px;
+    padding: 14px 6px;
+    background: firebrick;
+    color: floralwhite;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    font-weight:bolder ;
+}
+button > span{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+button >img{
+    margin-left: px;
+    vertical-align: middle;
+}
+button:hover{
+    filter: opacity(85%);
+    cursor: pointer;
+}
+
+/* domains */
+.domains{
+    width: 65%;
+    margin: 90px auto;
+}
+.domain1{
+    
+    background: #A02C07;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+.domain1 h1,span{
+    color: cornsilk;
+
+}
+.domain1 h1{
+    font-size: 18px;
+}
+.domain2{
+    /* width: 50%; */
+    color: cornsilk;
+    font-size: small;
+    background: #383534;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.domain2 a{
+    color: crimson;
+    text-decoration: none;
+}
+.domain2 a:hover{
+    text-decoration: underline;
+}
+
+
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+figcaption{
+    color: crimson;
+    text-align: center;
+}
+figure{
+
+    transition: all 0.3s ease-in-out 0s;
+}
+figure:hover, figure figcaption:hover{
+    transform: translateY(-5px);
+    color: floralwhite;
+    cursor: pointer;
+}
+.docu{
+    margin-left: 33px;
+}
+
+.toggleNav{
+    display: none;
+}
+
+@media all and (max-width:500px){
+.nav-bar li{
+    flex-basis: 100%;
+}
+.domain1 h1{
+    border-right: 2px solid whitesmoke;
+}
+.domain1 span{
+    padding-left: 15px;
+    font-size: smaller;
+}
+.category{ 
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+
+}
+/* Flex Items */
+
+
+.toggleNav{
+    display: block;
+    color: floralwhite;
+    text-decoration: none;
+}
+.nav-bar ul{
+    display: none;
+}
+.nav-bar ul.nav-l{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-r a{
+    display: flex;
+
+   
+}
